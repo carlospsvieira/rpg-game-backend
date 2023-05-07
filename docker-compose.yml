@@ -40,4 +40,4 @@ networks:
 
 # A renomeação da rede padrão é feita pois caso contrário o nome da rede será
 # o nome do diretório onde o arquivo atual se encontra, o que pode dificultar
-# a listagem individual.
+# a listagem individual
