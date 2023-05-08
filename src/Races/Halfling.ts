@@ -1,16 +1,16 @@
 import Race from './Race';
 
-export default class Dwarf extends Race {
+export default class Halfling extends Race {
   private static _createdInstances = 0;
   private _maxInstances = 5;
-  private _maxLifePoints = 80;
+  private _maxLifePoints = 60;
 
   constructor(name: string, dexterity: number) {
     super(name, dexterity);
-    if (Dwarf._createdInstances > this._maxInstances) {
-      throw new Error('Maximum number of Dwarf instances reached');
+    if (Halfling._createdInstances >= this._maxInstances) {
+      throw new Error('Maximum number of Halfling instances reached');
     }
-    Dwarf._createdInstances += 1;
+    Halfling._createdInstances += 1;
   }
 
   static createdRacesInstances(): number {
